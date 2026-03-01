@@ -1,0 +1,14 @@
+{
+  "type": "geometry/svg",
+  "glyphs": {
+    "65": {
+      "svg": "/glyphs/A.svg"
+    },
+    "73": {
+      "svg": "/glyphs/I.svg"
+    }
+  },
+  "sampling": {
+    "mode": "filled"
+  }
+}

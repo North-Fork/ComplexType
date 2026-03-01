@@ -1,0 +1,16 @@
+{
+  "ctfVersion": "0.1.0",
+  "packageId": "com.demo.svg-filled",
+  "modules": [
+    {
+      "id": "geometry-svg",
+      "type": "geometry/svg",
+      "version": "0.1.0",
+      "capabilities": [
+        "geometry:outline2d",
+        "sampling:filled"
+      ],
+      "path": "modules/geometry-svg.json"
+    }
+  ]
+}
