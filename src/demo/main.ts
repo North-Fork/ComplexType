@@ -30,7 +30,7 @@ async function init() {
   const glyphA = await makeParticleGlyphFromSVG({
     id: "glyph-A",
     codepoint: "A".codePointAt(0)!,
-    svgUrl: "/glyphs/A.svg",
+    svgUrl: `${import.meta.env.BASE_URL}glyphs/A.svg`,
     x: cx - 140,
     y: cy,
     seed: 1337,
@@ -42,7 +42,7 @@ async function init() {
   const glyphI = await makeParticleGlyphFromSVG({
     id: "glyph-I",
     codepoint: "I".codePointAt(0)!,
-    svgUrl: "/glyphs/I.svg",
+    svgUrl: `${import.meta.env.BASE_URL}glyphs/I.svg`,
     x: cx + 140,
     y: cy,
     seed: 7331,
@@ -58,7 +58,7 @@ init().catch(console.error);
 
 let last = performance.now();
 let acc = 0;
-const fixedDt = 1/60;
+const fixedDt = 1 / 60;
 
 function loop(now: number) {
   const elapsed = Math.min(0.1, (now - last) / 1000);
